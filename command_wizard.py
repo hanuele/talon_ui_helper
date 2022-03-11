@@ -56,9 +56,9 @@ def handle_image_click_builder(result):
         ":",
         "    user.mouse_helper_position_save()",
         f'    user.mouse_helper_move_image_relative("{filename}", {index}{offset_bit})',
-        "    sleep(0.05)",
+        "    sleep(0.1)",
         "    mouse_click(0)",
-        "    sleep(0.05)",
+        "    sleep(0.1)",
         "    user.mouse_helper_position_restore()",
     ])
     actions.clip.set_text(command)
